@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hope Foundation</title>
+    <meta name="description" content="Get in touch with Hope Foundation. Contact us for inquiries, partnerships, or to learn more about our work.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Hope<span>Foundation</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="causes.html">Causes</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="donate.html" class="donate-btn">Donate Now</a>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with any questions, suggestions, or partnership opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get in Touch</h2>
+                <p>Send us a message and we'll get back to you as soon as possible.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
+                <!-- Contact Form -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number (optional)</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" class="form-control" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="volunteer">Volunteer Opportunities</option>
+                                    <option value="partnership">Partnership Opportunities</option>
+                                    <option value="donation">Donation Questions</option>
+                                    <option value="media">Media Inquiries</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" required> I agree to the <a href="#">Privacy Policy</a>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Contact Information</h3>
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: #e74c3c; margin-bottom: 1rem;">Headquarters</h4>
+                            <p><strong>📍 Address:</strong><br>123 Hope Street<br>City, State 12345<br>United States</p>
+                            <p><strong>📞 Phone:</strong><br>(555) 123-4567</p>
+                            <p><strong>✉️ Email:</strong><br>info@hopefoundation.org</p>
+                            <p><strong>🌐 Website:</strong><br>www.hopefoundation.org</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: #e74c3c; margin-bottom: 1rem;">Office Hours</h4>
+                            <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                            <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+                            <p><strong>Sunday:</strong> Closed</p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: #e74c3c; margin-bottom: 1rem;">Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook">f</a>
+                                <a href="#" aria-label="Twitter">t</a>
+                                <a href="#" aria-label="Instagram">i</a>
+                                <a href="#" aria-label="LinkedIn">in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Department Contacts</h2>
+                <p>Reach out to specific departments for specialized assistance.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        👩‍💼
+                    </div>
+                    <div class="card-content">
+                        <h3>General Inquiries</h3>
+                        <p><strong>Email:</strong> info@hopefoundation.org</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p>For general questions about our work, programs, and initiatives.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🤝
+                    </div>
+                    <div class="card-content">
+                        <h3>Volunteer Coordination</h3>
+                        <p><strong>Email:</strong> volunteer@hopefoundation.org</p>
+                        <p><strong>Phone:</strong> (555) 123-4568</p>
+                        <p>For volunteer opportunities and program information.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        💝
+                    </div>
+                    <div class="card-content">
+                        <h3>Donations & Fundraising</h3>
+                        <p><strong>Email:</strong> donations@hopefoundation.org</p>
+                        <p><strong>Phone:</strong> (555) 123-4569</p>
+                        <p>For donation questions and corporate partnerships.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        📰
+                    </div>
+                    <div class="card-content">
+                        <h3>Media & Communications</h3>
+                        <p><strong>Email:</strong> media@hopefoundation.org</p>
+                        <p><strong>Phone:</strong> (555) 123-4570</p>
+                        <p>For media inquiries, interviews, and press releases.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🏢
+                    </div>
+                    <div class="card-content">
+                        <h3>Corporate Partnerships</h3>
+                        <p><strong>Email:</strong> partnerships@hopefoundation.org</p>
+                        <p><strong>Phone:</strong> (555) 123-4571</p>
+                        <p>For corporate social responsibility and partnership opportunities.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🌍
+                    </div>
+                    <div class="card-content">
+                        <h3>International Programs</h3>
+                        <p><strong>Email:</strong> international@hopefoundation.org</p>
+                        <p><strong>Phone:</strong> (555) 123-4572</p>
+                        <p>For questions about our global programs and field operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Offices -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Global Offices</h2>
+                <p>Our presence around the world enables us to serve communities more effectively.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        🇺🇸
+                    </div>
+                    <div class="card-content">
+                        <h3>United States (HQ)</h3>
+                        <p><strong>Address:</strong> 123 Hope Street, City, State 12345</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Email:</strong> usa@hopefoundation.org</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🇪🇺
+                    </div>
+                    <div class="card-content">
+                        <h3>Europe Office</h3>
+                        <p><strong>Address:</strong> 456 Hope Avenue, London, UK</p>
+                        <p><strong>Phone:</strong> +44 20 7123 4567</p>
+                        <p><strong>Email:</strong> europe@hopefoundation.org</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🇦🇺
+                    </div>
+                    <div class="card-content">
+                        <h3>Asia-Pacific Office</h3>
+                        <p><strong>Address:</strong> 789 Hope Road, Sydney, Australia</p>
+                        <p><strong>Phone:</strong> +61 2 9123 4567</p>
+                        <p><strong>Email:</strong> apac@hopefoundation.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about Hope Foundation.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>How can I donate to Hope Foundation?</h3>
+                        <p>You can donate online through our secure donation page, by phone, or by mail. We accept one-time and recurring donations.</p>
+                        <a href="donate.html" class="card-link">Donate Now →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>How do I become a volunteer?</h3>
+                        <p>Visit our volunteer page to learn about opportunities and fill out an application. We have both local and international volunteer programs.</p>
+                        <a href="volunteer.html" class="card-link">Volunteer →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Where does my donation go?</h3>
+                        <p>95% of donations go directly to programs. We maintain full transparency with detailed financial reports available on our website.</p>
+                        <a href="about.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Can I visit your project sites?</h3>
+                        <p>Yes! We organize donor visits and volunteer trips to our project sites. Contact our international programs team for details.</p>
+                        <a href="#" class="card-link">Contact Us →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hope Foundation</h3>
+                    <p>Making a difference together through compassion, action, and sustainable change.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="causes.html">Our Causes</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 123 Hope Street, City, State 12345</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@hopefoundation.org</li>
+                        <li>🌐 www.hopefoundation.org</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest news and events.</p>
+                    <form>
+                        <input type="email" placeholder="Your email" class="form-control mb-2">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hope Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
