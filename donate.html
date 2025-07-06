@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Hope Foundation</title>
+    <meta name="description" content="Make a donation to Hope Foundation and help us create lasting positive change in communities worldwide.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Hope<span>Foundation</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="causes.html">Causes</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="donate.html" class="donate-btn active">Donate Now</a>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span>Donate</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Make a Donation</h1>
+            <p>Your contribution makes a real difference in the lives of people around the world. Every dollar counts towards creating lasting change.</p>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your Donation Amount</h2>
+                <p>Select a donation amount or enter a custom amount below.</p>
+            </div>
+            
+            <div class="cards-grid" style="max-width: 800px; margin: 0 auto;">
+                <div class="card">
+                    <div class="card-content">
+                        <form id="donationForm">
+                            <div class="donation-amounts">
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn" data-amount="100">$100</button>
+                                <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                <button type="button" class="amount-btn" data-amount="500">$500</button>
+                                <button type="button" class="amount-btn" data-amount="1000">$1000</button>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customAmount">Custom Amount ($)</label>
+                                <input type="number" id="customAmount" class="form-control" placeholder="Enter amount" min="1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donationType">Donation Type</label>
+                                <select id="donationType" class="form-control" required>
+                                    <option value="">Select donation type</option>
+                                    <option value="one-time">One-time donation</option>
+                                    <option value="monthly">Monthly recurring</option>
+                                    <option value="quarterly">Quarterly recurring</option>
+                                    <option value="annually">Annual recurring</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cause">Support a specific cause (optional)</label>
+                                <select id="cause" class="form-control">
+                                    <option value="">Where needed most</option>
+                                    <option value="education">Education for All</option>
+                                    <option value="healthcare">Healthcare Access</option>
+                                    <option value="environment">Environmental Conservation</option>
+                                    <option value="water">Clean Water Initiative</option>
+                                    <option value="food">Food Security Program</option>
+                                    <option value="women">Women's Empowerment</option>
+                                    <option value="emergency">Emergency Response</option>
+                                </select>
+                            </div>
+                            
+                            <h3 class="mt-2 mb-2">Your Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number (optional)</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" class="form-control" required>
+                                    <option value="">Select your country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" required> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox"> I would like to receive updates about Hope Foundation's work
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                                Proceed to Payment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Your Impact</h2>
+                <p>See how your donation can make a difference in real lives.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        🎓
+                    </div>
+                    <div class="card-content">
+                        <h3>$25 Can Provide</h3>
+                        <ul style="padding-left: 20px;">
+                            <li>School supplies for 2 children</li>
+                            <li>1 week of meals for a family</li>
+                            <li>Basic medical care for 1 person</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🏥
+                    </div>
+                    <div class="card-content">
+                        <h3>$100 Can Provide</h3>
+                        <ul style="padding-left: 20px;">
+                            <li>1 month of education for a child</li>
+                            <li>Clean water for a family for 6 months</li>
+                            <li>Emergency healthcare for 3 people</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🌟
+                    </div>
+                    <div class="card-content">
+                        <h3>$500 Can Provide</h3>
+                        <ul style="padding-left: 20px;">
+                            <li>1 year of education for a child</li>
+                            <li>Teacher training for 1 educator</li>
+                            <li>Small business startup kit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Give -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Other Ways to Give</h2>
+                <p>Explore different ways you can support our mission.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        🎁
+                    </div>
+                    <div class="card-content">
+                        <h3>Memorial & Honor Gifts</h3>
+                        <p>Make a donation in memory of a loved one or to honor someone special.</p>
+                        <a href="contact.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        🏢
+                    </div>
+                    <div class="card-content">
+                        <h3>Corporate Partnerships</h3>
+                        <p>Partner with us to make a greater impact and engage your employees in meaningful work.</p>
+                        <a href="contact.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        📋
+                    </div>
+                    <div class="card-content">
+                        <h3>Planned Giving</h3>
+                        <p>Create a lasting legacy by including Hope Foundation in your estate planning.</p>
+                        <a href="contact.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hope Foundation</h3>
+                    <p>Making a difference together through compassion, action, and sustainable change.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="causes.html">Our Causes</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 123 Hope Street, City, State 12345</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@hopefoundation.org</li>
+                        <li>🌐 www.hopefoundation.org</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest news and events.</p>
+                    <form>
+                        <input type="email" placeholder="Your email" class="form-control mb-2">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hope Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
